@@ -37,6 +37,6 @@ mongoose
         useFindAndModify: false
     }).then(()=>{
         app.listen(port, ()=> console.log(`Server is running on ${port}`));
-        require('./utils/initial_roles')();
+        require('./utils/roles')();
     }).catch(err=> console.log(err));
 
